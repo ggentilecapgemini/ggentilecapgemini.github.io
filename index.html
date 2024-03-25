@@ -15,51 +15,10 @@
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
     </head>
-    <body id="page-top">   
-        <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
-            <div class="container px-4 px-lg-5">
-                <a class="navbar-brand" href="#page-top">Thales AI Assistant</a>
-                <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                    Menu
-                    <i class="fas fa-bars"></i>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarResponsive">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#projects">Generative AI for Engineering</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#contact">Contact us</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-        <!-- Masthead-->
-        <header class="masthead">
-            <div class="container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center">
-                <div class="d-flex justify-content-center">
-                    <div class="text-center">
-                        <h1 class="mx-auto my-0 text-uppercase">Thales AI assistant</h1>
-                        <h2 class="text-white-50 mx-auto mt-2 mb-5">Boost your company efficiency thanks to custom Generative AI agents</h2>
-                        <a class="btn btn-primary" href="#about">Get Started</a>
-                    </div>
-                </div>
-            </div>
-        </header>
-        <!-- About-->
-        <section class="about-section text-center" id="about">
-            <div class="container px-4 px-lg-5">
-                <div class="row gx-4 gx-lg-5 justify-content-center">
-                    <div class="col-lg-8">
-                        <h2 class="text-white mb-4">How does it work?</h2>
-                        <p class="text-white-50">
-                            Capgemini Invent allows you to create custom Generative AI agents. It means using the latest AI technologies to analyse the data you provide, train a generative AI model and improve your business efficiency, answering very precisely to your questions.<br> We would like to present you a very concrete example of what wer can propose you. <br> First of all, we have vectorised a pdf file, with specific parameters. Then, we have use LLMs to find accurate data in this vector field, answering precisely to your requests.
-                        </p>
-                    </div>
-                </div>
-                <flowise-fullchatbot></flowise-fullchatbot>
+    <body id="page-top">
                 <script type="module">
                     import Chatbot from "https://cdn.jsdelivr.net/npm/flowise-embed/dist/web.js"
-                    Chatbot.initFull({
+                    Chatbot.init({
                         chatflowid: "acc0a030-0abf-4476-8228-94977b047283",
                         apiHost: "https://flowise-7j7i.onrender.com",
                         chatflowConfig: {
@@ -103,6 +62,50 @@
                         }
                     })
                 </script>
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+            <div class="container px-4 px-lg-5">
+                <a class="navbar-brand" href="#page-top">Thales AI Assistant</a>
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#projects">Generative AI for Engineering</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">Contact us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Masthead-->
+        <header class="masthead">
+            <div class="container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center">
+                <div class="d-flex justify-content-center">
+                    <div class="text-center">
+                        <h1 class="mx-auto my-0 text-uppercase">Thales AI assistant</h1>
+                        <h2 class="text-white-50 mx-auto mt-2 mb-5">Boost your company efficiency thanks to custom Generative AI agents</h2>
+                        <a class="btn btn-primary" href="#about">Get Started</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- About-->
+        <section class="about-section text-center" id="about">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-lg-8">
+                        <h2 class="text-white mb-4">How does it work?</h2>
+                        <p class="text-white-50">
+                            Capgemini Invent allows you to create custom Generative AI agents. It means using the latest AI technologies to analyse the data you provide, train a generative AI model and improve your business efficiency, answering very precisely to your questions.<br> We would like to present you a very concrete example of what wer can propose you. <br> First of all, we have vectorised a pdf file, with specific parameters. Then, we have use LLMs to find accurate data in this vector field, answering precisely to your requests.
+                        </p>
+                        <h1>PDF Example by Object Tag</h1>
+                            <object data="assets/thales.pdf" type="application/pdf" width="100%" height="500px">
+                              <p>Unable to display PDF file. <a href="assets/thales.pdf">Download</a> instead.</p>
+                            </object>
+                    </div>
+                </div>
             </div>
         </section>
         <!-- Projects-->
