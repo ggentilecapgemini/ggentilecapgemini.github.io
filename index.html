@@ -104,7 +104,14 @@
                         </p>
                     </div>
                 </div>
-                <img class="img-fluid" src="assets/img/brain.webp" alt="..." />
+                <flowise-fullchatbot></flowise-fullchatbot>
+                    <script type="module">
+                        import Chatbot from "https://cdn.jsdelivr.net/npm/flowise-embed/dist/web.js"
+                        Chatbot.initFull({
+                        chatflowid: "acc0a030-0abf-4476-8228-94977b047283",
+                        apiHost: "https://flowise-7j7i.onrender.com",
+                        })
+                    </script>
             </div>
         </section>
         <!-- Projects-->
