@@ -20,9 +20,11 @@
 <script type="module">
     import Chatbot from "https://cdn.jsdelivr.net/npm/flowise-embed/dist/web.js"
     Chatbot.init({
-        chatflowid: "e16374bd-bad7-4ddb-ad2e-a3a79a900618",
+        chatflowid: "acc0a030-0abf-4476-8228-94977b047283",
         apiHost: "https://flowise-7j7i.onrender.com",
-
+        chatflowConfig: {
+            // topK: 2
+        },
         theme: {
             button: {
                 backgroundColor: "#3B81F6",
@@ -33,17 +35,17 @@
                 customIconSrc: "https://raw.githubusercontent.com/walkxcode/dashboard-icons/main/svg/google-messages.svg",
             },
             chatWindow: {
-                welcomeMessage: "Hello! I am Thales AI assistant. How can I help you? ",
+                welcomeMessage: "Hello! This is custom welcome message",
                 backgroundColor: "#ffffff",
                 height: 700,
-                width: 600,
+                width: 500,
                 fontSize: 16,
                 poweredByTextColor: "#303235",
                 botMessage: {
                     backgroundColor: "#f7f8ff",
                     textColor: "#303235",
                     showAvatar: true,
-                    avatarSrc: <i class="bi bi-airplane-engines-fill"></i>,
+                    avatarSrc: "https://raw.githubusercontent.com/zahidkhawaja/langchain-chat-nextjs/main/public/parroticon.png",
                 },
                 userMessage: {
                     backgroundColor: "#3B81F6",
