@@ -11201,3 +11201,19 @@ body {
 .footer {
   padding: 5rem 0;
 }
+
+
+/* custom added */
+.pdf-container {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+    /* Adjust as necessary to avoid scrolling on mobile */
+    /* You might want to use @media queries to handle different screen sizes */
+}
