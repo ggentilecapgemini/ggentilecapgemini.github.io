@@ -11204,6 +11204,16 @@ body {
 
 
 /* custom added */
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+}
+
 .pdf-container {
     width: 100%;
     height: 100%;
