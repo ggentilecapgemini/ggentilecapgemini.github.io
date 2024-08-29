@@ -16,52 +16,82 @@
         <link href="css/styles.css" rel="stylesheet" />
     </head>
     <body id="page-top">
-                <script type="module">
-                    import Chatbot from "https://cdn.jsdelivr.net/npm/flowise-embed/dist/web.js"
-                    Chatbot.init({
-                        chatflowid: "f56562c5-8fc0-4c29-b8bb-2d2d1c534247",
-                        apiHost: "https://flowise-hb7f.onrender.com",
-                        chatflowConfig: {
-                            // topK: 2
+
+            <script type="module">
+                import Chatbot from "https://cdn.jsdelivr.net/npm/flowise-embed/dist/web.js"
+                Chatbot.init({
+                    chatflowid: "5ba6cd77-678d-4b3d-8bf1-a066f48045e4",
+                    apiHost: "https://flowise-hb7f.onrender.com",
+                    chatflowConfig: {
+                        // topK: 2
+                    },
+                    theme: {
+                        button: {
+                            backgroundColor: "#3B81F6",
+                            right: 20,
+                            bottom: 20,
+                            size: 48, // small | medium | large | number
+                            dragAndDrop: true,
+                            iconColor: "white",
+                            customIconSrc: "https://raw.githubusercontent.com/walkxcode/dashboard-icons/main/svg/google-messages.svg",
                         },
-                        theme: {
-                          "button": {
-                            "backgroundColor": "#002864",
-                            "right": "50",
-                            "bottom": "20",
-                            "size": "large",
-                            "iconColor": "white",
-                            "customIconSrc": "https://raw.githubusercontent.com/walkxcode/dashboard-icons/main/svg/google-messages.svg"
-                          },
-                          "chatWindow": {
-                            "welcomeMessage": "Hello! Welcome to the GenAI Team Agent for Digital Engineering. How can I help you today?",
-                            "backgroundColor": "#ffffff",
-                            "height": "500",
-                            "width": "400",
-                            "fontSize": 16,
-                            "poweredByTextColor": "#ffffff",
-                            "botMessage": {
-                              "backgroundColor": "#f7f8ff",
-                              "textColor": "#303235",
-                              "showAvatar": false,
-                              "avatarSrc": "https://raw.githubusercontent.com/zahidkhawaja/langchain-chat-nextjs/main/public/parroticon.png"
+                        tooltip: {
+                            showTooltip: true,
+                            tooltipMessage: 'Hi There 👋!',
+                            tooltipBackgroundColor: 'black',
+                            tooltipTextColor: 'white',
+                            tooltipFontSize: 16,
+                        },
+                        chatWindow: {
+                            showTitle: true,
+                            title: 'Flowise Bot',
+                            titleAvatarSrc: 'https://raw.githubusercontent.com/walkxcode/dashboard-icons/main/svg/google-messages.svg',
+                            showAgentMessages: true,
+                            welcomeMessage: 'Hello! This is custom welcome message',
+                            errorMessage: 'This is a custom error message',
+                            backgroundColor: "#ffffff",
+                            height: 700,
+                            width: 400,
+                            fontSize: 16,
+                            poweredByTextColor: "#303235",
+                            botMessage: {
+                                backgroundColor: "#f7f8ff",
+                                textColor: "#303235",
+                                showAvatar: true,
+                                avatarSrc: "https://raw.githubusercontent.com/zahidkhawaja/langchain-chat-nextjs/main/public/parroticon.png",
                             },
-                            "userMessage": {
-                              "backgroundColor": "#76a4f4",
-                              "textColor": "#ffffff",
-                              "showAvatar": true,
-                              "avatarSrc": "https://raw.githubusercontent.com/zahidkhawaja/langchain-chat-nextjs/main/public/usericon.png"
+                            userMessage: {
+                                backgroundColor: "#3B81F6",
+                                textColor: "#ffffff",
+                                showAvatar: true,
+                                avatarSrc: "https://raw.githubusercontent.com/zahidkhawaja/langchain-chat-nextjs/main/public/usericon.png",
                             },
-                            "textInput": {
-                              "placeholder": "Type your question",
-                              "backgroundColor": "#ffffff",
-                              "textColor": "#303235",
-                              "sendButtonColor": "#002864"
+                            textInput: {
+                                placeholder: 'Type your question',
+                                backgroundColor: '#ffffff',
+                                textColor: '#303235',
+                                sendButtonColor: '#3B81F6',
+                                maxChars: 50,
+                                maxCharsWarningMessage: 'You exceeded the characters limit. Please input less than 50 characters.',
+                                autoFocus: true, // If not used, autofocus is disabled on mobile and enabled on desktop. true enables it on both, false disables it on both.
+                                sendMessageSound: true,
+                                // sendSoundLocation: "send_message.mp3", // If this is not used, the default sound effect will be played if sendSoundMessage is true.
+                                receiveMessageSound: true,
+                                // receiveSoundLocation: "receive_message.mp3", // If this is not used, the default sound effect will be played if receiveSoundMessage is true. 
+                            },
+                            feedback: {
+                                color: '#303235',
+                            },
+                            footer: {
+                                textColor: '#303235',
+                                text: 'Powered by',
+                                company: 'Capgemini Invent',
+                                companyLink: 'https://flowiseai.com',
                             }
-                          }
                         }
-                    })
-                </script>
+                    }
+                })
+            </script>
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
             <div class="container px-4 px-lg-5">
