@@ -54,78 +54,75 @@
                     <div class="col-lg-8">
                         <h2 class="text-white mb-4">How to use this tool ?</h2>
 
-
-
-<flowise-fullchatbot></flowise-fullchatbot>
-<script type="module">
-    import Chatbot from "https://cdn.jsdelivr.net/npm/flowise-embed/dist/web.js"
-    Chatbot.initFull({
-        chatflowid: "815d2738-b93e-485c-acc0-860a9b22eca7",
-        apiHost: "https://venturi-ai.app.flowiseai.com",
-        theme: {
-            chatWindow: {
-                showTitle: true,
-                title: 'CodeBeamer for Valeo GenAI Agent',
-                titleAvatarSrc: 'https://raw.githubusercontent.com/walkxcode/dashboard-icons/main/svg/google-messages.svg',
-                showAgentMessages: true,
-                welcomeMessage: 'Hello! Please ask the capability you want support for',
-                errorMessage: 'An error occurred ... please refresh the page and test again',
-                backgroundColor: "#ffffff",
-                backgroundImage: 'enter image path or link', // If set, this will overlap the background color of the chat window.
-                height: 700,
-                width: 400,
-                fontSize: 16,
-                //starterPrompts: ['What is a bot?', 'Who are you?'], // It overrides the starter prompts set by the chat flow passed
-                starterPromptFontSize: 15,
-                clearChatOnReload: false, // If set to true, the chat will be cleared when the page reloads.
-                botMessage: {
-                    backgroundColor: "#f7f8ff",
-                    textColor: "#303235",
-                    showAvatar: true,
-                    avatarSrc: "https://raw.githubusercontent.com/zahidkhawaja/langchain-chat-nextjs/main/public/parroticon.png",
-                },
-                userMessage: {
-                    backgroundColor: "#3B81F6",
-                    textColor: "#ffffff",
-                    showAvatar: true,
-                    avatarSrc: "https://raw.githubusercontent.com/zahidkhawaja/langchain-chat-nextjs/main/public/usericon.png",
-                },
-                textInput: {
-                    placeholder: 'Type your question',
-                    backgroundColor: '#ffffff',
-                    textColor: '#303235',
-                    sendButtonColor: '#3B81F6',
-                    maxChars: 5000,
-                    maxCharsWarningMessage: 'You exceeded the characters limit. Please input less than 50 characters.',
-                    autoFocus: true, // If not used, autofocus is disabled on mobile and enabled on desktop. true enables it on both, false disables it on both.
-                    sendMessageSound: true,
-                    // sendSoundLocation: "send_message.mp3", // If this is not used, the default sound effect will be played if sendSoundMessage is true.
-                    receiveMessageSound: true,
-                    // receiveSoundLocation: "receive_message.mp3", // If this is not used, the default sound effect will be played if receiveSoundMessage is true. 
-                },
-                feedback: {
-                    color: '#303235',
-                },
-                footer: {
-                    textColor: '#303235',
-                    text: 'Powered by',
-                    company: 'Capgemini Invent',
-                    companyLink: 'https://www.capgemini.com',
-                }
-            }
-        }
-    })
-</script>
-
-
-
-
-
-<!--p class="text-white">
+                            <p class="text-white">
                             
                             We have developed a GenAI Agent Team to help you gather as much information as possible from Capgemini's internal resources to support your activities around GenAI topics. <br><br> This team agent is actually made up of 3 agents: a solution expert, a reference expert and a global knowledge expert. These 3 agents discuss together to answer your request as precisely as possible, challenging each other's approach to create a cognitive reasoning. (You got it, this is not ChatGPT).
                             <br><br> Please note: this team is here to help you find solutions, references or GenAI knowledge among the data available in the GenAI for Digital Engineering Sharepoint, and propose you concrete answers. <br><br> Example of a relevant question: I would like to built a commercial proposal for a client in the Automotive industry to support their production of Printed Circuit Board thanks to GenAI solutions. What could support this offer?  <br><br> Enough talk: to start, click on the bubble on the bottom right of this page. Have a happy conversation!
-                    </p-->
+
+
+                            <flowise-fullchatbot></flowise-fullchatbot>
+                            <script type="module">
+                                import Chatbot from "https://cdn.jsdelivr.net/npm/flowise-embed/dist/web.js"
+                                Chatbot.initFull({
+                                    chatflowid: "815d2738-b93e-485c-acc0-860a9b22eca7",
+                                    apiHost: "https://venturi-ai.app.flowiseai.com",
+                                    theme: {
+                                        chatWindow: {
+                                            showTitle: true,
+                                            title: 'CodeBeamer for Valeo GenAI Agent',
+                                            titleAvatarSrc: 'https://raw.githubusercontent.com/walkxcode/dashboard-icons/main/svg/google-messages.svg',
+                                            showAgentMessages: true,
+                                            welcomeMessage: 'Hello! Please ask the capability you want support for',
+                                            errorMessage: 'An error occurred ... please refresh the page and test again',
+                                            backgroundColor: "#ffffff",
+                                            backgroundImage: 'enter image path or link', // If set, this will overlap the background color of the chat window.
+                                            height: 800,
+                                            width: 600,
+                                            fontSize: 16,
+                                            //starterPrompts: ['What is a bot?', 'Who are you?'], // It overrides the starter prompts set by the chat flow passed
+                                            starterPromptFontSize: 15,
+                                            clearChatOnReload: false, // If set to true, the chat will be cleared when the page reloads.
+                                            botMessage: {
+                                                backgroundColor: "#f7f8ff",
+                                                textColor: "#303235",
+                                                showAvatar: true,
+                                                avatarSrc: "https://raw.githubusercontent.com/zahidkhawaja/langchain-chat-nextjs/main/public/parroticon.png",
+                                            },
+                                            userMessage: {
+                                                backgroundColor: "#3B81F6",
+                                                textColor: "#ffffff",
+                                                showAvatar: true,
+                                                avatarSrc: "https://raw.githubusercontent.com/zahidkhawaja/langchain-chat-nextjs/main/public/usericon.png",
+                                            },
+                                            textInput: {
+                                                placeholder: 'Type your question',
+                                                backgroundColor: '#ffffff',
+                                                textColor: '#303235',
+                                                sendButtonColor: '#3B81F6',
+                                                maxChars: 5000,
+                                                maxCharsWarningMessage: 'You exceeded the characters limit. Please input less than 50 characters.',
+                                                autoFocus: true, // If not used, autofocus is disabled on mobile and enabled on desktop. true enables it on both, false disables it on both.
+                                                sendMessageSound: true,
+                                                // sendSoundLocation: "send_message.mp3", // If this is not used, the default sound effect will be played if sendSoundMessage is true.
+                                                receiveMessageSound: true,
+                                                // receiveSoundLocation: "receive_message.mp3", // If this is not used, the default sound effect will be played if receiveSoundMessage is true. 
+                                            },
+                                            feedback: {
+                                                color: '#303235',
+                                            },
+                                            footer: {
+                                                textColor: '#303235',
+                                                text: 'Powered by',
+                                                company: 'Capgemini Invent',
+                                                companyLink: 'https://www.capgemini.com',
+                                            }
+                                        }
+                                    }
+                                })
+                            </script>
+
+                    
+                    </p>
                             
                     </div>
                 </div>
